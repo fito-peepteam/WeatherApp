@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private var cityName: String = "Cupertino, CA"
  
     var body: some View {
         ZStack {
@@ -17,13 +19,19 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Text("Cupertino, CA")
+                Text(cityName)
+                    .font(.system(size: 32, weight: .medium, design: .default))
                     .foregroundColor(.white)
-                    .fontWeight(.bold)
+                Spacer()
             }
         }
     }
 }
+
+
+
+
+
 
 
 
